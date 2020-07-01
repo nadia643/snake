@@ -30,7 +30,7 @@ let fruit;
     }
 
     snake.collided();
-    document.querySelector(".score").innerHTML = snake.total;    
+    document.querySelector(".score").innerHTML = "Score: " + snake.total;    
     
   }, 250);
 }());
@@ -38,7 +38,4 @@ let fruit;
 window.addEventListener('keydown', ((evt) => {
   const direction = evt.key.replace('Arrow', '');
   snake.changeDirection(direction);
-
-  
-  
 }))
