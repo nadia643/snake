@@ -1,5 +1,9 @@
 const canvas = document.querySelector(".canvas");
 const ctx = canvas.getContext("2d");
+
+
+ctx.stroke();
+
 const scale = 40;
 
 const rows = canvas.height / scale;
@@ -16,6 +20,7 @@ let fruit;
   window.setInterval(() => {
     // moves the rect along instead of adding more
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     fruit.draw();
     snake.update();
     snake.draw();
