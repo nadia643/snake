@@ -27,8 +27,53 @@ h1 {
   width: 100px;
   font-family: 'MuseoModerno', cursive;
   font-weight: bold;
-  color: lightslategray;
-  margin-left: 50%;
-  margin-top: 2%; }
+  color: lightslategray; }
   .rules:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 420px;
+  background-color: rgba(104, 195, 218, 0.459);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -190%;
+  left: 190%;
+  margin-left: -80px; }
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*to center the button, wrapped it in a div called wrapper */
+.wrapper {
+  text-align: center;
+  padding: 20px; }

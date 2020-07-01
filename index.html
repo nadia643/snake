@@ -14,8 +14,17 @@
 <div class="score">Score</div>
 
   <canvas class="canvas" id="canvas" width="600" height="600"></canvas>
-
-  <button class="rules">Rules</button>
+  <div class="wrapper">
+  <div class="popup">
+  <button class="rules" onClick="popUpRules()">Rules</button>
+    <span class="popuptext" id="myPopup">
+      Use the arrow keys to move the snake. <br />
+      He can move through the walls and come out on the other side. <br />
+      Every square he eats makes him grow bigger. <br />
+      If you run into yourself, you go back to 0. 
+    </span>
+  </div>
+</div>
  
   <script type="text/javascript" src='./fruit.js'></script>
   <script type="text/javascript" src='./snake.js'></script>

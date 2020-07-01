@@ -39,3 +39,9 @@ window.addEventListener('keydown', ((evt) => {
   const direction = evt.key.replace('Arrow', '');
   snake.changeDirection(direction);
 }))
+
+function popUpRules() {
+  let popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
