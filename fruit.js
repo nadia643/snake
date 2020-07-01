@@ -10,11 +10,13 @@ function Fruit() {
   
   //   return "rgb("+red+","+green+"," +blue+" )";  
   // }
+
   // this makes it a diff colour on every refresh of the page
   let red = Math.floor(Math.random()* 255);
   let green = Math.floor(Math.random() * 255);
   let blue = Math.floor(Math.random() * 255);
   let getRandomColour = "rgb("+red+","+green+"," +blue+" )";
+  
 
   this.choseInitialPlace = function() {
     this.x = (Math.floor(Math.random() * rows - 1) + 1) * scale;

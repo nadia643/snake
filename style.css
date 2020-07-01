@@ -44,7 +44,7 @@ h1 {
 .popup .popuptext {
   visibility: hidden;
   width: 420px;
-  background-color: rgba(104, 195, 218, 0.459);
+  background-color: lightgray;
   color: #fff;
   text-align: center;
   border-radius: 6px;
